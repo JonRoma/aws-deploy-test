@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  foo:
+    Properties:
+      CodeUri: s3://as-aws-lambda-zip-us-east-2-224588347132/foo/aad9ba376032203fd09a32d3a4a0b8e9
+      Handler: foo.handler
+      Runtime: python3.6
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31

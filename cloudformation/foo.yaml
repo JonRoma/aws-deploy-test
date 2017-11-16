@@ -7,4 +7,5 @@ Resources:
         Properties:
            Handler: foo.handler
            Runtime: python3.6
-           CodeUri: s3://as-aws-lambda-zip-us-east-2-224588347132/foo/foo.zip
+        #  CodeUri: s3://as-aws-lambda-zip-us-east-2-224588347132/foo/foo.zip
+           CodeUri: /Users/roma/Documents/Git/Develop/aws-deploy-test/lambda/foo.zip
