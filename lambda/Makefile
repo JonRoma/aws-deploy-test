@@ -1,8 +1,8 @@
-all:	foo.zip
+all:	*.zip
 
-foo.zip: foo.py
-	rm -f $@
-	zip -r9 foo.zip ./foo.py
+%.zip: %.py
+	echo rm -f $@
+	zip -r9 $@ $<
 
 clean:
-	rm foo.zip
+	rm *.zip
