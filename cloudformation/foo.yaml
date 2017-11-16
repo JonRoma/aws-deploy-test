@@ -6,5 +6,5 @@ Resources:
         Type: AWS::Serverless::Function
         Properties:
            Handler: foo.handler
-           Runtime: runtime
-           CodeUri: s3://bucketName/codepackage.zip
+           Runtime: python3.6
+           CodeUri: s3://as-aws-lambda-zip-us-east-2-224588347132/foo/foo.zip
