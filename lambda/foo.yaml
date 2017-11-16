@@ -1,11 +1,16 @@
 AWSTemplateFormatVersion: '2010-09-09'
+Description:    Cheezy code
 Resources:
   foo:
     Properties:
-      CodeUri: ./foo.zip
+      CodeUri: s3://as-aws-lambda-zip-us-east-2-224588347132/foo/foo.zip
       Description: Jon's cheesy lambda function
       FunctionName: roma-foo
       Handler: foo.handler
       Runtime: python3.6
     Type: AWS::Serverless::Function
-Transform: AWS::Serverless-2016-10-31
+    Environment:
+        Variables:
+            FOO:    bar
+            BAR:    foo
+Transform:      AWS::Serverless-2016-10-31
