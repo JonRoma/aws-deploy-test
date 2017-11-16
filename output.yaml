@@ -2,7 +2,9 @@ AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   foo:
     Properties:
-      CodeUri: s3://as-aws-lambda-zip-us-east-2-224588347132/foo/aad9ba376032203fd09a32d3a4a0b8e9
+      CodeUri: s3://as-aws-lambda-zip-us-east-2-224588347132/foo/48f2cae3a344ca1791c95cabeea68444
+      Description: Jon's cheesy lambda function
+      FunctionName: roma-foo
       Handler: foo.handler
       Runtime: python3.6
     Type: AWS::Serverless::Function
