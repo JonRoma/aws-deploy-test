@@ -5,6 +5,7 @@ resource "aws_codepipeline" "foo" {
   role_arn = "arn:aws:iam::224588347132:role/AWS-CodePipeline-Service"
 
   artifact_store {
+    # TODO: Where is this bucket created?
     # location = "${aws_s3_bucket.foo.bucket}"
     location = "codepipeline-us-east-2-224588347132"
     type     = "S3"
