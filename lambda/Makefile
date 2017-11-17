@@ -1,8 +1,10 @@
-all:	*.zip
+OBJS	:= $(patsubst %.py, %.zip, $(wildcard *.py))
+
+all:	${OBJS}
 
 %.zip: %.py
-	echo rm -f $@
+	@rm -f $@
 	zip -r9 $@ $<
 
 clean:
-	rm *.zip
+	rm -f *.zip
