@@ -9,7 +9,7 @@ Resources:
       FunctionName: roma-example2
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: ./
+      CodeUri: ./example2/
       Events:
         MyTimeApi:
           Type: Api
