@@ -1,0 +1,13 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - npm install time
+      - aws cloudformation package --template-file example2/sam_template.yaml 
+                    --s3-bucket as-aws-lambda-zip-us-east-2-224588347132
+                    --s3-prefix roma-example2
+                    --output-template-file new_sam_template.yaml
+artifacts:
+  type: zip
+  files:
+    - new_sam_template.yaml
