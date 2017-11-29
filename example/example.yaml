@@ -4,6 +4,8 @@ Resources:
   TestFunction:
     Type: AWS::Serverless::Function
     Properties:
+      Description: Jon's example lambda function
+      FunctionName: roma-example
       Handler: index.handler
       Runtime: nodejs6.10
       Environment:
