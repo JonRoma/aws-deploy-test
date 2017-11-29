@@ -8,7 +8,8 @@ http://docs.aws.amazon.com/lambda/latest/dg/serverless-deploy-wt.html
 : aws cloudformation package \
    --template-file example.yaml \
    --output-template-file serverless-output.yaml \
-   --s3-bucket as-aws-lambda-zip-us-east-2-224588347132
+   --s3-bucket as-aws-lambda-zip-us-east-2-224588347132 \
+   --s3-prefix roma-example
 
 ```
 #### Notes from the [documentation](http://docs.aws.amazon.com/cli/latest/reference/cloudformation/package.html)
