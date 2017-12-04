@@ -10,6 +10,6 @@ phases:
                     --s3-prefix roma-example2
                     --output-template-file new_sam_template.yaml
 artifacts:
-  type: zip
   files:
     - new_sam_template.yaml
+# discard-paths: yes
